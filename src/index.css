@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+/* @custom-variant dark (&:is(.dark *)); */
+
+@theme {
+  --font-sans: sans-serif;
+  --color-darker: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+}
+
+html,
+body {
+  @apply min-h-screen w-full scroll-smooth;
+}
+
+body {
+  @apply bg-darker text-foreground font-sans flex flex-col;
+}
+
+#root {
+  @apply max-w-4xl w-full flex flex-col mx-auto px-4 pt-10 pb-20;
+}
