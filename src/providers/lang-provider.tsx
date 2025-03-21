@@ -10,7 +10,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const LangProvider = ({ children }: { children: React.ReactNode }) => {
   const [language, setLanguage] = useState<string>(() => {
-    return localStorage.getItem("language") || "en"
+    return localStorage.getItem("language") || "es"
   })
 
   const { i18n } = useTranslation()
