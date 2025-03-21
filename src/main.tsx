@@ -4,10 +4,15 @@ import './index.css'
 import { ThemeProvider } from './providers/theme-provider.tsx'
 import { Home } from './app/Home.tsx'
 
+import './config/i18n.ts'
+import { LangProvider } from './providers/lang-provider.tsx'
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Home/>
+      <LangProvider>
+        <Home/>
+      </LangProvider>
     </ThemeProvider>
   </StrictMode>,
 )
