@@ -1,4 +1,4 @@
-import { IconProps } from "../../../interfaces";
+import { IconProps } from "@/interfaces";
 
 export const Nodejs = ({ size = 16, className, ...props }: IconProps) => (
   <svg
