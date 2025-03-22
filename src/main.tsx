@@ -7,13 +7,15 @@ import { Home } from './app/Home.tsx'
 import './config/i18n.ts'
 import { LangProvider } from './providers/lang-provider.tsx'
 import { About } from './app/About.tsx'
+import { Projects } from './app/Projects.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <LangProvider>
         <Home/>
-        <About/>
+        {/* <About/> */}
+        <Projects/>
       </LangProvider>
     </ThemeProvider>
   </StrictMode>,
