@@ -9,6 +9,7 @@ import { Docker } from "./technologies/docker"
 import { Expressjs } from "./technologies/express"
 import { Git } from "./technologies/git"
 import { Html } from "./technologies/html"
+import { JavaScript } from "./technologies/javascript"
 import { JQuery } from "./technologies/jquery"
 import { Laravel } from "./technologies/laravel"
 import { MongoDB } from "./technologies/mongodb"
@@ -39,6 +40,7 @@ export const Icons = {
     express   : Expressjs,
     git       : Git,
     html      : Html,
+    javascript: JavaScript,
     jquery    : JQuery,
     laravel   : Laravel,
     mongodb   : MongoDB,

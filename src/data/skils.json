@@ -1,0 +1,17 @@
+[
+    {"name": "React",       "icon": "react"      },
+    {"name": "JavaScript",  "icon": "javascript"   },
+    {"name": "PHP",         "icon": "php"        },
+    {"name": "MySQL",       "icon": "mysql"         },
+    {"name": "NodeJS",      "icon": "node"         },
+    {"name": "CSS3",        "icon": "css"       },
+    {"name": "Html5",       "icon": "html"      },
+    {"name": "TailwindCSS", "icon": "tailwindcss"         },
+    {"name": "Bootstrap",   "icon": "bootstrap"  },
+    {"name": "Git",         "icon": "git"  },
+    {"name": "JQuery",      "icon": "jquery"         },
+    {"name": "TypeScript",  "icon": "typescript"  },
+    {"name": "Angular",     "icon": "angular"         },
+    {"name": "C#",          "icon": "csharp"         },  
+    {"name": "Laravel",     "icon": "laravel"         }
+]

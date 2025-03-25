@@ -8,6 +8,7 @@ import './config/i18n.ts'
 import { LangProvider } from './providers/lang-provider.tsx'
 import { About } from './app/About.tsx'
 import { Projects } from './app/Projects.tsx'
+import { Skills } from './app/Skills.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')!).render(
         <Home/>
         {/* <About/> */}
         <Projects/>
+        <Skills />
       </LangProvider>
     </ThemeProvider>
   </StrictMode>,
