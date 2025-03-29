@@ -1,3 +1,4 @@
+import { Bars } from "./bars"
 import { Github } from "./social-media/github"
 import { Linkedin } from "./social-media/linkedin"
 
@@ -57,5 +58,7 @@ export const Icons = {
     typeorm   : TypeORM,
     typescript: TypeScript,
     vite      : Vite,
+
+    bars      : Bars
   }
   
