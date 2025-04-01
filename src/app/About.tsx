@@ -1,7 +1,9 @@
+import RotatingText from "@/shared/components/roating-text";
 import { useTranslation } from "react-i18next";
 
 export const About = () => {
   const { t } = useTranslation();
+
 
   return (
     <section id="about" className="container mx-auto my-4 py-[15rem]">
@@ -12,7 +14,11 @@ export const About = () => {
             <p className="text-gray-300 mb-5 text-xl text-justify"> 
               {t('About.profileText')}
             </p>
-            
+            <RotatingText 
+              texts={['hola', 'mundo']}
+              mainClassName="inline-flex dark:bg-white bg-[hsl(0-0%-98%)] px-1 ml-2 rounded-sm"
+              elementLevelClassName="dark:text-black text-white font-bold"
+              />
           </div>
         </div>
 
