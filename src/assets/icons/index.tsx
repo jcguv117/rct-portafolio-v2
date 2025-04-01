@@ -1,3 +1,4 @@
+import { Globe } from "./globe"
 import { Github } from "./social-media/github"
 import { Linkedin } from "./social-media/linkedin"
 
@@ -30,12 +31,11 @@ import { Vite } from "./technologies/vite"
 
 
 export const Icons = {
+    // Technologies Icons
     angular   : Angular,
     bootstrap : Bootstrap,
     csharp    : CSharp,
     css       : Css,
-    github    : Github,
-    linkedin  : Linkedin,
     docker    : Docker,
     express   : Expressjs,
     git       : Git,
@@ -57,5 +57,12 @@ export const Icons = {
     typeorm   : TypeORM,
     typescript: TypeScript,
     vite      : Vite,
+
+    // Social Icons
+    github    : Github,
+    linkedin  : Linkedin,
+
+    // Another Icons
+    globe     : Globe,
   }
   
