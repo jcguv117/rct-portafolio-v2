@@ -79,5 +79,5 @@ body {
 }
 
 #root {
-  @apply max-w-4xl w-full flex flex-col mx-auto;
+  @apply w-full flex flex-col mx-auto;
 }

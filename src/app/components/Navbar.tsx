@@ -2,8 +2,18 @@ import React from "react";
 import { Bars } from "@/assets/icons/bars";
 import { Moon } from "@/assets/icons/moon";
 import { Sun } from "@/assets/icons/sun";
+import { useTheme } from "@/providers/theme-provider";
+import { useLanguage } from "@/providers/lang-provider";
 
 export default function Navbar() {
+  const { theme, setTheme } = useTheme()
+
+  const { language, toggleLanguage } = useLanguage()
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark")
+  }
+
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
@@ -14,25 +24,29 @@ export default function Navbar() {
               href="#home">
               CARLOS GUEVARA
             </a>
-            <div className="flex">
+            <div className="flex lg:hidden">
+                <button 
+                    className="text-white flex items-center cursor-pointer text-xl leading-none mx-2 py-1 border border-solid border-transparent rounded bg-transparent outline-none focus:outline-none"
+                    type="button"
+                    onClick={toggleTheme}
+                    >
+                      <Sun className="fill-white dark:-rotate-90 h-[1.2rem] w-[2rem] rotate-0 scale-100 transition-all dark:scale-0" />
+                      <Moon className="fill-white absolute h-[1.2rem] w-[2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                </button>
+                <button 
+                    className="text-white hover:underline cursor-pointer text-sm leading-none mx-2 py-1 border border-solid border-transparent rounded bg-transparent block outline-none focus:outline-none"
+                    type="button"
+                    onClick={toggleLanguage}
+                    >
+                        {language === "es" ? "ES" : "EN"}
+                </button>
                 <button className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                 type="button" onClick={() => setNavbarOpen(!navbarOpen)}>
                     <Bars className="" />
                 </button>
-                <button 
-                    className="text-white cursor-pointer text-xl leading-none mx-2 py-1 border border-solid border-transparent rounded bg-transparent block outline-none focus:outline-none"
-                    type="button">
-                    <Moon className="fill-white w-5" />
-                    {/* <Sun className="fill-white w-5" /> */}
-                </button>
-                <button 
-                    className="text-white hover:underline cursor-pointer text-sm leading-none mx-2 py-1 border border-solid border-transparent rounded bg-transparent block outline-none focus:outline-none"
-                    type="button">
-                        ES
-                </button>
-
             </div>
           </div>
+
           <div
             className={
               "lg:flex flex-grow items-center" +
@@ -61,6 +75,24 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
+          </div>
+
+          <div className="hidden lg:flex">
+                <button 
+                    className="text-white flex cursor-pointer text-xl leading-none mx-2 py-1 border border-solid border-transparent rounded bg-transparent outline-none focus:outline-none"
+                    type="button"
+                    onClick={toggleTheme}
+                    >
+                      <Sun className="fill-white dark:-rotate-90 h-[1.2rem] w-[2rem] rotate-0 scale-100 transition-all dark:scale-0" />
+                      <Moon className="fill-white absolute h-[1.2rem] w-[2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                </button>
+                <button 
+                    className="text-white hover:underline cursor-pointer text-sm leading-none mx-2 py-1 border border-solid border-transparent rounded bg-transparent block outline-none focus:outline-none"
+                    type="button"
+                    onClick={toggleLanguage}
+                    >
+                        {language === "es" ? "ES" : "EN"}
+                </button>
           </div>
         </div>
       </nav>

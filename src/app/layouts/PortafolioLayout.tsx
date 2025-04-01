@@ -1,5 +1,5 @@
 import { Footer } from "@/app/components/Footer"
-import Navbar from "@/app/components/navbar"
+import Navbar from "@/app/components/Navbar"
 import { Home } from "../Home"
 import { Projects } from "../Projects"
 import { Skills } from "../Skills"
