@@ -4,7 +4,7 @@
       "subtitle": "Aplicación de Scraping de datos",
       "description":
         "Es una herramienta sencilla para la obtención de información actualizada sobre los tipos de cambio publicados por el Banco de México. A través del formulario, puedes generar automáticamente un archivo PDF con los datos más recientes, extraídos directamente de la página fuente.",
-      "image": "/images/projects/app-scraping.png",
+      "image": "/projects/app-scraping.png",
       "website": null,
       "github": "https://github.com/jcguv117/node-scraping/",
       "tools": ["Node", "Html", "CSS", "Puppeteer", "Express"]
@@ -14,40 +14,40 @@
       "subtitle": "Simulador de google maps",
       "description":
         "Esta aplicación genera marcadores con información aleatoria dentro del mapa de google maps, utiliza un archivo GeoJSON para dibujar un polígono de coordenadas en el mapa y agrega marcadores dentro de su área.",
-      "image": "/images/projects/app-map-google.png",
+      "image": "/projects/app-map-google.png",
       "website": "https://simulador-map-google-jcguv117s-projects.vercel.app/",
       "github": "https://github.com/jcguv117/ag-map-google/",
-      "tools": ["Angular"]
+      "tools": ["Angular", "TailwindCSS", "TypeScript", "Google Map Api"]
     },
     {
       "title": "PointOfSale App",
       "subtitle": "Demo Punto de Venta",
       "description":
         "Esta aplicación es un punto de venta sencillo que utiliza el 'local storage' con el manejador de Zustand para almacenar las ordenes activas, sus funciones consisten en administrar las ordenes y mostrar sus totales.",
-      "image": "/images/projects/app-pos.png",
+      "image": "/projects/app-pos.png",
       "website": "https://neon-tulumba-8dd4bd.netlify.app/",
       "github": "https://github.com/jcguv117/prct-pos-app",
-      "tools": ["react"]
+      "tools": ["React", "TailwindCSS", "TypeScript", "Zustand"]
     },
     {
       "title": "CALCULADORA DE AMORTIZACIONES",
       "subtitle": "Simulador de amortizaciones",
       "description":
         "Esta aplicación funciona como una herramienta para calcular una tabla de amortización de pagos en base al monto, tasa de interés y su cantidad de periodos, además de proporcionar herramientas para exportar los datos generados.",
-      "image": "/images/projects/app-amortizacion.png",
+      "image": "/projects/app-amortizacion.png",
       "website": "https://jcguv117.github.io/amortization-calculator/",
       "github": "https://github.com/jcguv117/amortization-calculator/",
-      "tools": ["Html"]
+      "tools": ["HTML", "TailwindCSS", "JQuery", "DataTables"]
     },
     {
       "title": "PASSWORD GENERATOR",
       "subtitle": "Generador de contraseñas",
       "description":
         "Esta herramienta tiene como función generar contraseñas aleatorias, permite crear contraseñas únicas y robustas de manera personalizada. El usuario puede ajustar diversos parámetros, como la longitud de la contraseña, el conjunto de caracteres permitidos (letras mayúsculas y minúsculas, números, símbolos) y la complejidad de las combinaciones.",
-      "image": "/images/projects/app-password.png",
+      "image": "/projects/app-password.png",
       "website": "https://jcguv117.github.io/password-generator/",
       "github": "https://github.com/jcguv117/password-generator/",
-      "tools": ["Html"]
+      "tools": ["HTML", "TailwindCSS", "JavaScript"]
     },
     {
       "title": "SISPAG",
@@ -57,7 +57,7 @@
       "image": null,
       "website": "",
       "github": "https://github.com/jcguv117/sistema-de-pagares",
-      "tools": ["PHP"]
+      "tools": ["PHP", "JavaScript", "Bootstrap", "JQuery"]
     },
     {
       "title": "BITACORA TRACTOR",
@@ -67,6 +67,6 @@
       "image": null,
       "website": "",
       "github": "https://github.com/jcguv117/BitacoraTractor",
-      "tools": ["React"]
+      "tools": ["React", "JavaScript", "Material UI", "Node"]
     }
   ]
