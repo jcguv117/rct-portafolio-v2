@@ -6,7 +6,7 @@ export const About = () => {
 
 
   return (
-    <section id="about" className="container mx-auto my-4 py-[15rem]">
+    <section id="about" className="container mx-auto">
       <div className="container px-8 grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="ml-4 col-span-1">
           <div>
@@ -21,7 +21,9 @@ export const About = () => {
               />
           </div>
         </div>
-
+        <div className="flex justify-center">
+          <img className="rounded-full" src="/images/profile.jpg"/>
+        </div>
       </div>
     </section>
   )

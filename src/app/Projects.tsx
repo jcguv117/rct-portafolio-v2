@@ -11,7 +11,7 @@ export const Projects = () => {
   const [visible, setVisible] = useState(Array(projects.length).fill(true));
 
   return (
-    <section id="projects" className="container mx-auto text-gray-400 body-font pt-[10rem] pb-[10rem]">
+    <section id="projects" className="container mx-auto text-gray-400 body-font">
       <div>
           <h1 className="text-center md:text-4xl text-2xl font-medium title-font mb-4 text-white">
             Aplicaciones que he construido

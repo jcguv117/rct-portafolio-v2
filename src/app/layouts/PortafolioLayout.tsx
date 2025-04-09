@@ -12,9 +12,9 @@ export const PortafolioLayout = () => {
         <Navbar/>
         <Home/>
         <About/>
-        <Projects/>
         <Skills />
-        <Contact />
+        <Projects/>
+        {/* <Contact /> */}
         <Footer />
     </>
   )
