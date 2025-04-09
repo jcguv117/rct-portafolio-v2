@@ -13,5 +13,8 @@
     {"name": "TypeScript",  "icon": "typescript"  },
     {"name": "Angular",     "icon": "angular"         },
     {"name": "C#",          "icon": "csharp"         },  
-    {"name": "Laravel",     "icon": "laravel"         }
+    {"name": "Laravel",     "icon": "laravel"       },
+    {"name": "Vite",        "icon": "vite"          },
+    {"name": "Sass",        "icon": "sass"          },
+    {"name": "Express",     "icon": "express"          }
 ]
