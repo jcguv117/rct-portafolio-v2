@@ -5,6 +5,13 @@
     },
     "About": {
         "profileTitle": "Ingeniero en Sistemas Computacionales.",
-        "profileText": "En mi experiencia laboral  como Desarrollador Web FullStack e utilizado múltiples lenguajes de programación para llevar a cabo siempre una solución adecuada a lo que se requiere desarrollar. Actualmente sigo en constante aprendizaje en el desarrollo FullStack y de técnicas como principios SOLID, para profundizar mis conocimientos, mejorar la calidad y agilidad en el desarrollo de software."
+        "profileText": "En mi experiencia laboral  como Desarrollador Web FullStack e utilizado múltiples lenguajes de programación para llevar a cabo siempre una solución adecuada a lo que se requiere desarrollar. Actualmente sigo en constante aprendizaje en el desarrollo FullStack y de técnicas como principios SOLID, para profundizar mis conocimientos, mejorar la calidad y agilidad en el desarrollo de software.",
+        "rotatingTexts" : ["Hola", "Mundo"]
+    },
+    "Skills": {
+        "title": "Conocimientos de tecnologías"
+    },
+    "Projects": {
+        "title": "Aplicaciones que he construido"
     }
 }
