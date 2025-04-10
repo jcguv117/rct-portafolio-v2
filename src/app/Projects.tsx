@@ -1,5 +1,4 @@
 import SpotlightCard from "@/shared/components/spotlight-card"
-import data from "@/data/projects.json"
 import { ControlButton } from "./components/ControlButton";
 import { useTranslation } from "react-i18next";
 import { Project } from "@/interfaces/Project.interface";
@@ -8,7 +7,10 @@ import { ProjectCard } from "./components/ProjectCard";
 export const Projects = () => {
 
   const { t } = useTranslation()
-  const projects: Project[] = data;
+  const projects: Project[] = t("Projects.data", {
+    returnObjects: true,
+  }) as Project[]
+  
 
   return (
     <section id="projects" className="container mx-auto body-font">

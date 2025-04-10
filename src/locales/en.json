@@ -12,6 +12,71 @@
         "title": "Knowledge of technologies"
     },
     "Projects": {
-        "title": "Applications I have built"
+        "title": "Applications I have built",
+        "data": [
+            {
+              "title": "NODE SCRAPING",
+              "subtitle": "Data Scraping Application",
+              "description": "It is a simple tool to obtain updated information on exchange rates published by the Bank of Mexico. Through the form, you can automatically generate a PDF file with the latest data, extracted directly from the source page.",
+              "image": "/projects/app-scraping.png",
+              "website": null,
+              "github": "https://github.com/jcguv117/node-scraping/",
+              "tools": ["Node", "Html", "CSS", "Puppeteer", "Express"]
+            },
+            {
+              "title": "MARKER SIMULATOR",
+              "subtitle": "Google Maps Simulator",
+              "description": "This application generates markers with random information within the Google Maps map. It uses a GeoJSON file to draw a coordinate polygon on the map and adds markers within its area.",
+              "image": "/projects/app-map-google.png",
+              "website": "https://simulador-map-google-jcguv117s-projects.vercel.app/",
+              "github": "https://github.com/jcguv117/ag-map-google/",
+              "tools": ["Angular", "TailwindCSS", "TypeScript", "Google Map Api"]
+            },
+            {
+              "title": "PointOfSale App",
+              "subtitle": "Point of Sale Demo",
+              "description": "This application is a simple point of sale that uses 'local storage' with the Zustand handler to store active orders. Its functions consist of managing orders and displaying their totals.",
+              "image": "/projects/app-pos.png",
+              "website": "https://neon-tulumba-8dd4bd.netlify.app/",
+              "github": "https://github.com/jcguv117/prct-pos-app",
+              "tools": ["React", "TailwindCSS", "TypeScript", "Zustand"]
+            },
+            {
+              "title": "AMORTIZATION CALCULATOR",
+              "subtitle": "Amortization Simulator",
+              "description": "This application functions as a tool to calculate a payment amortization table based on the amount, interest rate, and number of periods, in addition to providing tools to export the generated data.",
+              "image": "/projects/app-amortizacion.png",
+              "website": "https://jcguv117.github.io/amortization-calculator/",
+              "github": "https://github.com/jcguv117/amortization-calculator/",
+              "tools": ["HTML", "TailwindCSS", "JQuery", "DataTables"]
+            },
+            {
+              "title": "PASSWORD GENERATOR",
+              "subtitle": "Password Generator",
+              "description": "This tool's function is to generate random passwords, allowing the creation of unique and robust passwords in a personalized way. The user can adjust various parameters, such as password length, the set of allowed characters (uppercase and lowercase letters, numbers, symbols), and the complexity of the combinations.",
+              "image": "/projects/app-password.png",
+              "website": "https://jcguv117.github.io/password-generator/",
+              "github": "https://github.com/jcguv117/password-generator/",
+              "tools": ["HTML", "TailwindCSS", "JavaScript"]
+            },
+            {
+              "title": "SISPAG",
+              "subtitle": "Promissory Note System",
+              "description": "Private system, custom-made, in the real estate area. It is a system I developed for the company Exelco, starting from the entire life cycle of a software system.",
+              "image": null,
+              "website": "",
+              "github": "https://github.com/jcguv117/sistema-de-pagares",
+              "tools": ["PHP", "JavaScript", "Bootstrap", "JQuery"]
+            },
+            {
+              "title": "TRACTOR LOGBOOK",
+              "subtitle": "Unit Monitoring Logbook",
+              "description": "Unit monitoring system for a transport company, performs CRUD functions with user permissions and instant modifications between users to export information to another proprietary system of the company.",
+              "image": null,
+              "website": "",
+              "github": "https://github.com/jcguv117/BitacoraTractor",
+              "tools": ["React", "JavaScript", "Material UI", "Node"]
+            }
+          ]
     }
 }

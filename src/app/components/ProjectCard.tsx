@@ -17,12 +17,12 @@ export const ProjectCard: React.FC<ProjectCard> = ({title, subtitle, description
             />
         }
         <div className="relative w-full h-full z-10 p-2">
-        <h1 className="text-center text-xl font-medium">
+        <div className="text-center text-xl font-medium">
             {title}
-        </h1>
-        <h2 className="text-center tracking-widest text-sm font-medium text-primary mb-4">
+        </div>
+        <div className="text-center tracking-widest text-sm font-medium text-primary mb-4">
             {subtitle}
-        </h2>
+        </div>
         <p className="leading-relaxed">{description}</p>
         <div className="flex flex-wrap justify-center my-2 gap-1">
             {
@@ -30,12 +30,12 @@ export const ProjectCard: React.FC<ProjectCard> = ({title, subtitle, description
                 const Icon = Icons[tag.toLowerCase() as keyof typeof Icons];
                 return (
                     <Badge
-                    key={tag}
-                    variant="secondary"
-                    className="flex shrink-0 items-center justify-center gap-2 px-2 py-1 font-medium"
-                    >
-                    { Icon && <Icon size={16} className="w-4 h-4" /> }
-                    <span className="ml:text-sm text-accent-foreground">{tag}</span>
+                        key={tag}
+                        variant="secondary"
+                        className="flex shrink-0 items-center justify-center gap-2 px-2 py-1 font-medium"
+                        >
+                        { Icon && <Icon size={16} className="w-4 h-4" /> }
+                        <span className="ml:text-sm text-accent-foreground">{tag}</span>
                     </Badge>
                 )
             })
