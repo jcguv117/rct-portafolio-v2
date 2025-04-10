@@ -3,12 +3,12 @@ import React from 'react'
 
 interface ControlButton {
     icon     : keyof typeof Icons;
-    url      : string;
+    url      : string | null;
     tooltip? : string;
 }
 
 export const ControlButton: React.FC<ControlButton> = ({icon, tooltip, url}) => {
-    const handleOpenURL = (url: string) => {
+    const handleOpenURL = (url: string | null) => {
         url && window.open(url, '_blank', 'noopener,noreferrer');
       }
 
