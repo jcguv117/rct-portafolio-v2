@@ -26,7 +26,7 @@ export const FloatButton: React.FC<FloatButton> = ({
         >
           <div
             className="flex items-center justify-center w-full transition-all duration-300 group-hover:justify-start group-hover:px-3">
-              { Icon && <Icon size={16} className="w-5 h-5" /> }
+              { Icon && <Icon size={16} className="w-5 h-5 fill-white" /> }
           </div>
           <div
             className="absolute left-10 ml-1 transform translate-x-full opacity-0 text-white text-lg font-semibold transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
