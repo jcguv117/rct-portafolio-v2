@@ -11,6 +11,7 @@ import { Css } from "./technologies/css"
 import { Docker } from "./technologies/docker"
 import { Expressjs } from "./technologies/express"
 import { Git } from "./technologies/git"
+import { GoogleMaps } from "./technologies/google-maps"
 import { Html } from "./technologies/html"
 import { JavaScript } from "./technologies/javascript"
 import { JQuery } from "./technologies/jquery"
@@ -59,6 +60,7 @@ export const Icons = {
     typeorm   : TypeORM,
     typescript: TypeScript,
     vite      : Vite,
+    googlemaps: GoogleMaps,
 
     // Social Icons
     github    : Github,

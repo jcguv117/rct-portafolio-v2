@@ -30,7 +30,7 @@
               "image": "/projects/app-map-google.png",
               "website": "https://simulador-map-google-jcguv117s-projects.vercel.app/",
               "github": "https://github.com/jcguv117/ag-map-google/",
-              "tools": ["Angular", "TailwindCSS", "TypeScript", "Google Map Api"]
+              "tools": ["Angular", "TailwindCSS", "TypeScript", "Google Maps"]
             },
             {
               "title": "PointOfSale App",

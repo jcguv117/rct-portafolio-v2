@@ -1,6 +1,7 @@
 import { Icons } from "@/assets/icons";
 import data from "@/data/skils.json"
 import IconWall from "@/shared/components/icon-wall";
+
 interface Skills {
     name: string;
     icon: string;

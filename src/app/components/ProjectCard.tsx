@@ -27,7 +27,8 @@ export const ProjectCard: React.FC<ProjectCard> = ({title, subtitle, description
         <div className="flex flex-wrap justify-center my-2 gap-1">
             {
             tools.map( (tag: string) => {
-                const Icon = Icons[tag.toLowerCase() as keyof typeof Icons];
+                const tagName = tag.toLowerCase().replace(' ','');
+                const Icon = Icons[tagName as keyof typeof Icons];
                 return (
                     <Badge
                         key={tag}
