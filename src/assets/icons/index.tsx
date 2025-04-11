@@ -1,3 +1,5 @@
+import { ClipboardUser } from "./clipboard-user"
+import { Download } from "./download"
 import { Globe } from "./globe"
 import { Github } from "./social-media/github"
 import { Linkedin } from "./social-media/linkedin"
@@ -63,6 +65,8 @@ export const Icons = {
     linkedin  : Linkedin,
 
     // Another Icons
-    globe     : Globe,
+    globe         : Globe,
+    clipboarduser : ClipboardUser,
+    download      : Download,
   }
   
