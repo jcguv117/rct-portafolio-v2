@@ -2,14 +2,20 @@ import { Icons } from "@/assets/icons";
 import { FloatButton } from "@/shared/components/float-button"
 
 interface SocialMedia {
+  className?: string;
+}
+
+interface SocialMediaBtn {
   label: string;
   icon: keyof typeof Icons;
   link: string;
 }
 
-export const SocialMedia = () => {
+export const SocialMedia: React.FC<SocialMedia> = ({
+  className = ''
+}) => {
 
-  const buttons: SocialMedia[] = [
+  const buttons: SocialMediaBtn[] = [
     {
       label: "GitHub",
       icon: "github",
@@ -23,7 +29,7 @@ export const SocialMedia = () => {
   ]
 
   return (
-    <div className="flex flex-row-reverse gap-2">
+    <div className={`flex gap-2 ${className} `}>
       {
         buttons.map((item, i) => (
           <FloatButton 

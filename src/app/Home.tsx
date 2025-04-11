@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next"
-import { SocialMedia } from "./components/SocialMedia";
 
 export const Home = () => {
   const { t, i18n } = useTranslation();
@@ -18,7 +17,6 @@ export const Home = () => {
               className="bg-sky-600 hover:bg-cyan-700 text-white py-2 px-4 rounded-full cursor-pointer">
               {i18n.language === "es" ? "Ver" : "Show"} CV
             </a>
-            <SocialMedia />
       </div>
     </section>
   )
