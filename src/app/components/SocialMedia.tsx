@@ -1,5 +1,5 @@
 import { Icons } from "@/assets/icons";
-import { FloatButton } from "@/shared/components/float-button"
+import { HoverButton } from "@/shared/components/hover-button"
 
 interface SocialMedia {
   className?: string;
@@ -32,9 +32,9 @@ export const SocialMedia: React.FC<SocialMedia> = ({
     <div className={`flex gap-2 ${className} `}>
       {
         buttons.map((item, i) => (
-          <FloatButton 
+          <HoverButton 
             key={i}
-            classColor={'bg-gradient-to-r from-cyan-500 to-blue-500'}
+            classColor={'gradient-color'}
             label={item.label}
             icon={item.icon}
             link={item.link}

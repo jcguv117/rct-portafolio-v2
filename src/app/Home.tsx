@@ -1,3 +1,4 @@
+import { HoverButton } from "@/shared/components/hover-button";
 import { useTranslation } from "react-i18next"
 
 export const Home = () => {
@@ -12,11 +13,15 @@ export const Home = () => {
       <h2 className="text-primary text-3xl sm:text-5xl">
         {t("Home.subtitle")}
       </h2>
-      <div className="m-4 pt-2">
-            <a href="" target="_blank" rel="noreferrer"
-              className="bg-sky-600 hover:bg-cyan-700 text-white py-2 px-4 rounded-full cursor-pointer">
-              {i18n.language === "es" ? "Ver" : "Show"} CV
-            </a>
+      <div className="my-4 flex justify-center">
+          <a href="/Carlos Guevara CV (es).pdf" download={'Carlos Guevara CV.pdf'}>        
+            <HoverButton 
+                  classColor={'gradient-color'}
+                  label={`${i18n.language === "es" ? "Descargar" : "Download"} CV`}
+                  icon={'download'}
+                  callback={() => null}
+                  />
+          </a>
       </div>
     </section>
   )

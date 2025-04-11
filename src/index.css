@@ -122,7 +122,7 @@ body {
 
   .mask-horizontal::before,
   .mask-horizontal::after {
-    @apply content-[""] pointer-events-none absolute top-0 bottom-0 w-[10%] z-[2];
+    @apply content-[""] pointer-events-none absolute top-0 bottom-0 w-[5%] z-[2];
   }
 
   .mask-horizontal::before {
@@ -145,6 +145,12 @@ body {
   }
 }
 
-/* section {
-  @apply border border-amber-400
-} */
+@layer components {
+  .gradient-color {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500
+  }
+}
+
+section {
+  @apply my-[5%]
+}
