@@ -3,18 +3,21 @@ import Navbar from "@/app/components/Navbar"
 import { Home } from "../Home"
 import { Projects } from "../Projects"
 import { Skills } from "../Skills"
-import Contact from "../Contact"
+// import Contact from "../Contact"
 import { About } from "../About"
+import { SocialMedia } from "../components/SocialMedia"
 
 export const PortafolioLayout = () => {
   return (
     <>
         <Navbar/>
-        <Home/>
+        <SocialMedia className={'flex-col fixed bottom-[1%] z-50 ml-4'} />
+        <div className="min-h-screen flex flex-col justify-center">
+          <Home/>
+          <Skills />
+        </div>
         <About/>
-        <Skills />
         <Projects/>
-        {/* <Contact /> */}
         <Footer />
     </>
   )

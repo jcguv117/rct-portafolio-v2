@@ -17,7 +17,7 @@ export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="sticky w-full top-0 z-50 flex flex-wrap items-center justify-between px-2 py-2 bg-gradient-to-r from-cyan-500 to-blue-500">
+      <nav className="sticky w-full top-0 z-50 flex flex-wrap items-center justify-between px-2 py-2 gradient-color">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a className="text-sm font-bold leading-relaxed inline-block mr-4 p-2 whitespace-nowrap uppercase text-white no-underline"
@@ -47,7 +47,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div
+          {/* <div
             className={
               "lg:flex flex-grow items-center" +
               (navbarOpen ? " flex" : " hidden")
@@ -75,7 +75,7 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="hidden lg:flex">
                 <button 
