@@ -10,7 +10,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const LangProvider = ({ children }: { children: React.ReactNode }) => {
   const [language, setLanguage] = useState<string>(() => {
-    return localStorage.getItem("language") || "es"
+    return localStorage.getItem("language") || "en"
   })
 
   const { i18n } = useTranslation()
@@ -20,6 +20,17 @@ export const LangProvider = ({ children }: { children: React.ReactNode }) => {
     setLanguage(newLang)
     localStorage.setItem("language", newLang)
   }
+
+  useEffect(() => {
+    // Check for language parameter in URL
+    const urlParams = new URLSearchParams(window.location.search)
+    const langParam = urlParams.get("lang")
+    
+    if (langParam && (langParam === "en" || langParam === "es")) {
+      setLanguage(langParam)
+      localStorage.setItem("language", langParam)
+    }
+  }, [])
 
   useEffect(() => {
     i18n.changeLanguage(language)
