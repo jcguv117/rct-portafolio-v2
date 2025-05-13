@@ -1,5 +1,3 @@
-import React from "react";
-import { Bars } from "@/assets/icons/bars";
 import { Moon } from "@/assets/icons/moon";
 import { Sun } from "@/assets/icons/sun";
 import { useTheme } from "@/providers/theme-provider";
@@ -14,7 +12,7 @@ export default function Navbar() {
     setTheme(theme === "dark" ? "light" : "dark")
   }
 
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  // const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
       <nav className="sticky w-full top-0 z-50 flex flex-wrap items-center justify-between px-2 py-2 gradient-color">
@@ -40,10 +38,13 @@ export default function Navbar() {
                     >
                         {language === "es" ? "ES" : "EN"}
                 </button>
-                <button className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-                type="button" onClick={() => setNavbarOpen(!navbarOpen)}>
+                {/* <button 
+                    className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                    type="button" 
+                    onClick={() => setNavbarOpen(!navbarOpen)}
+                    >
                     <Bars className="" />
-                </button>
+                </button> */}
             </div>
           </div>
 
