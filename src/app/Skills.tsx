@@ -1,6 +1,8 @@
 import { Icons } from "@/assets/icons";
-import data from "@/data/skils.json"
+import { baseURL } from "@/config/config-url";
+import dataSkills from "@/data/skills.json"
 import IconWall from "@/shared/components/icon-wall";
+import { useEffect, useState } from "react";
 
 interface Skills {
     name: string;
@@ -8,6 +10,16 @@ interface Skills {
 }
 
 export const Skills = () => {
+    const [data, setData] = useState<Skills[]>(dataSkills)
+
+    useEffect(() => {
+        fetch(baseURL + "/skills.json")
+        .then((res) => res.json())
+        .then((json) => setData(json))
+        .catch((err) => console.error("Error loading skills:", err))
+    }, [])
+
+
     const SkilsData = data.map((skill: Skills) => {
         const Icon = skill.icon ? Icons[skill.icon as keyof typeof Icons] : undefined;
         return {
