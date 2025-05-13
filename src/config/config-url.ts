@@ -1,0 +1,1 @@
+export const baseURL = "https://cg-portafolio-default-rtdb.firebaseio.com";

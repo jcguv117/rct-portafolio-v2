@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.0.14",
     "class-variance-authority": "^0.7.1",
     "i18next": "^24.2.3",
+    "i18next-http-backend": "^3.0.2",
     "motion": "^12.6.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
