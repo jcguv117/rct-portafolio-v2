@@ -11,7 +11,7 @@ export const PortafolioLayout = () => {
   return (
     <>
         <Navbar/>
-        <SocialMedia className={'flex-col fixed bottom-[1%] z-50 ml-4'} />
+        <SocialMedia className={'flex-col fixed bottom-5 z-50 ml-4'} />
         <div className="min-h-screen flex flex-col justify-center">
           <Home/>
           <Skills />
