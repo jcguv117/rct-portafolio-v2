@@ -1,16 +1,33 @@
+import { baseURL, driveURL } from "@/config/config-url";
 import { HoverButton } from "@/shared/components/hover-button";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next"
 
 export const Home = () => {
   const { t, i18n } = useTranslation();
 
+  const [dataFile, setDataFile] = useState<any>({})
+
+  useEffect(() => {
+      fetch(`${baseURL}/files.json`)
+      .then((res) => res.json())
+      .then((json) => setDataFile(json))
+      .catch((err) => console.error("Error loading data files:", err))
+  }, [])
+
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = `/resources/Carlos Guevara CV (${i18n.language === "es" ? "es" : "en"}).pdf`;
-    link.download = 'Carlos Guevara CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const lang = i18n.language === "es" ? "es" : "en";
+    const idFile = dataFile ? dataFile[lang] : null;
+    if(idFile) {
+        link.href = `${driveURL}&id=${idFile}`
+        link.download = 'Carlos Guevara CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    } else {
+        console.error("file not found.")
+    }
   };
 
   return (
